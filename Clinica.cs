@@ -88,7 +88,7 @@ namespace AgendaClinica
 
             if (!encontrado)
             {
-                Console.WriteLine("❌ No encontrado");
+                Console.WriteLine(" No encontrado");
             }
         }
 

@@ -28,7 +28,7 @@ namespace AgendaClinica
 
                 while (!int.TryParse(input, out opcion))
                 {
-                    Console.Write("❌ Ingrese número válido: ");
+                    Console.Write(" Ingrese número válido: ");
                     input = Console.ReadLine();
                 }
 
