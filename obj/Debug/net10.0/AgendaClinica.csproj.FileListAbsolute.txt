@@ -12,3 +12,18 @@ C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\AgendaClinica\obj\Debug\net10.0\
 C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\AgendaClinica\obj\Debug\net10.0\AgendaClinica.pdb
 C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\AgendaClinica\obj\Debug\net10.0\AgendaClinica.genruntimeconfig.cache
 C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\AgendaClinica\obj\Debug\net10.0\ref\AgendaClinica.dll
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\bin\Debug\net10.0\AgendaClinica.exe
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\bin\Debug\net10.0\AgendaClinica.deps.json
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\bin\Debug\net10.0\AgendaClinica.runtimeconfig.json
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\bin\Debug\net10.0\AgendaClinica.dll
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\bin\Debug\net10.0\AgendaClinica.pdb
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.AssemblyInfoInputs.cache
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.AssemblyInfo.cs
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.csproj.CoreCompileInputs.cache
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.sourcelink.json
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.dll
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\refint\AgendaClinica.dll
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.pdb
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\AgendaClinica.genruntimeconfig.cache
+C:\Users\DANNY G\OneDrive\Documentos\proyectoc#\Proyecto Agenda de Turnos en C#\obj\Debug\net10.0\ref\AgendaClinica.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\AgendaClinica\\AgendaClinica.csproj",
+      "projectUniqueName": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\Proyecto Agenda de Turnos en C#\\AgendaClinica.csproj",
       "projectName": "AgendaClinica",
-      "projectPath": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\AgendaClinica\\AgendaClinica.csproj",
+      "projectPath": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\Proyecto Agenda de Turnos en C#\\AgendaClinica.csproj",
       "packagesPath": "C:\\Users\\DANNY G\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\AgendaClinica\\obj\\",
+      "outputPath": "C:\\Users\\DANNY G\\OneDrive\\Documentos\\proyectoc#\\Proyecto Agenda de Turnos en C#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DANNY G\\AppData\\Roaming\\NuGet\\NuGet.Config"

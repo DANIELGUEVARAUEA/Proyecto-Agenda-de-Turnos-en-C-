@@ -94,7 +94,7 @@ namespace AgendaClinica
                     // OPCIÓN 4: SALIR
                     // ============================
                     case 4:
-                        Console.WriteLine("Saliendo del sistema... 👋");
+                        Console.WriteLine("Saliendo del sistema... ");
                         break;
 
                     // ============================
