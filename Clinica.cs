@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace AgendaClinica
 {
@@ -7,13 +8,11 @@ namespace AgendaClinica
     // ============================
     public class Clinica
     {
-        // VECTOR (arreglo) para almacenar turnos
+        // VECTOR DE TURNOS
         private Turno[] agenda = new Turno[100];
-
-        // contador de registros
         private int contador = 0;
 
-        // MATRIZ (control de horarios)
+        // MATRIZ DE HORARIOS
         private string[,] horarios = new string[7, 8];
 
         // ============================
@@ -24,9 +23,7 @@ namespace AgendaClinica
             InicializarHorarios();
         }
 
-        // ============================
-        // INICIALIZA MATRIZ DE HORARIOS
-        // ============================
+        // Inicializa matriz
         private void InicializarHorarios()
         {
             for (int i = 0; i < 7; i++)
@@ -43,28 +40,20 @@ namespace AgendaClinica
         // ============================
         public void AgregarTurno(Turno t)
         {
-            if (contador < agenda.Length)
-            {
-                agenda[contador] = t;
-                contador++;
+            agenda[contador] = t;
+            contador++;
 
-                // guardar en archivo
-                ArchivoHelper.Guardar(t);
+            ArchivoHelper.Guardar(t);
 
-                Console.WriteLine("✔ Turno registrado correctamente.\n");
-            }
-            else
-            {
-                Console.WriteLine("❌ Agenda llena.");
-            }
+            Console.WriteLine("✔ Turno registrado correctamente");
         }
 
         // ============================
-        // MOSTRAR TURNOS (REPORTE)
+        // MOSTRAR TURNOS
         // ============================
         public void MostrarTurnos()
         {
-            Console.WriteLine("\n===== REPORTE DE TURNOS =====\n");
+            Console.WriteLine("\n===== LISTA DE TURNOS =====\n");
 
             for (int i = 0; i < contador; i++)
             {
@@ -74,31 +63,62 @@ namespace AgendaClinica
                 Console.WriteLine($"Especialidad: {agenda[i].Especialidad}");
                 Console.WriteLine($"Fecha: {agenda[i].Fecha}");
                 Console.WriteLine($"Hora: {agenda[i].Hora}");
-                Console.WriteLine("---------------------------");
+                Console.WriteLine("----------------------");
             }
         }
 
         // ============================
-        // BUSCAR POR PACIENTE
+        // BUSCAR TURNO
         // ============================
         public void BuscarTurno(string nombre)
         {
             bool encontrado = false;
 
+            nombre = nombre ?? "";
+
             for (int i = 0; i < contador; i++)
             {
                 if (agenda[i].NombrePaciente.ToLower() == nombre.ToLower())
                 {
-                    Console.WriteLine("\n✔ Turno encontrado:");
-                    Console.WriteLine($"Fecha: {agenda[i].Fecha}");
-                    Console.WriteLine($"Hora: {agenda[i].Hora}");
+                    Console.WriteLine("✔ Turno encontrado:");
+                    Console.WriteLine($"{agenda[i].Fecha} - {agenda[i].Hora}");
                     encontrado = true;
                 }
             }
 
             if (!encontrado)
             {
-                Console.WriteLine("❌ No se encontró el paciente.");
+                Console.WriteLine("❌ No encontrado");
+            }
+        }
+
+        // ============================
+        // CARGAR DESDE ARCHIVO TXT
+        // ============================
+        public void CargarDesdeArchivo()
+        {
+            if (!File.Exists("turnos.txt"))
+                return;
+
+            string[] lineas = File.ReadAllLines("turnos.txt");
+
+            foreach (string linea in lineas)
+            {
+                string[] datos = linea.Split(',');
+
+                if (datos.Length < 6) continue;
+
+                Turno t = new Turno();
+
+                t.Id = int.Parse(datos[0]);
+                t.NombrePaciente = datos[1];
+                t.Medico = datos[2];
+                t.Especialidad = datos[3];
+                t.Fecha = datos[4];
+                t.Hora = datos[5];
+
+                agenda[contador] = t;
+                contador++;
             }
         }
     }
